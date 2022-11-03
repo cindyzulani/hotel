@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Hotel Template - The Ultimate Multipurpose admin template</title>
+    <!-- Custom CSS -->
+    <link href="../assets/extra-libs/c3/c3.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="index.html">
+                            <b class="logo-icon">
+                                <!-- Dark Logo icon -->
+                                Dashboard Hotel
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                            class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                        <!-- Notification -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)" id="bell" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span><i data-feather="bell" class="svg-icon"></i></span>
+                                <span class="badge badge-primary notify-no rounded-circle">5</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="message-center notifications position-relative">
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <div class="btn btn-danger rounded-circle btn-circle"><i data-feather="airplay" class="text-white"></i></div>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
+                                                    <span class="font-12 text-nowrap d-block text-muted">Just see
+                                                        the my new
+                                                        admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-success text-white rounded-circle btn-circle"><i
+                                                        data-feather="calendar" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Event today</h6>
+                                                    <span class="font-12 text-nowrap d-block text-muted text-truncate">Just
+                                                        a reminder that you have event</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-info rounded-circle btn-circle"><i
+                                                        data-feather="settings" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Settings</h6>
+                                                    <span class="font-12 text-nowrap d-block text-muted text-truncate">You
+                                                        can customize this template
+                                                        as you want</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)" class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-primary rounded-circle btn-circle"><i
+                                                        data-feather="box" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle pl-2">
+                                                    <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span class="font-12 text-nowrap d-block text-muted">Just
+                                                        see the my admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
+                                            <strong>Check all notifications</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- End Notification -->
+                        <!-- ============================================================== -->
+                        <!-- create new -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="settings" class="svg-icon"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <div class="customize-input">
+                                    <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                        <option selected>EN</option>
+                                        <option value="1">AB</option>
+                                        <option value="2">AK</option>
+                                        <option value="3">BE</option>
+                                    </select>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <form>
+                                    <div class="customize-input">
+                                        <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search" placeholder="Search" aria-label="Search">
+                                        <i class="form-control-icon" data-feather="search"></i>
+                                    </div>
+                                </form>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle" width="40">
+                                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Cindy</span> <i data-feather="chevron-down" class="svg-icon"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Inbox</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Account Setting</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Logout</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
+                                        Profile</a></div>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" data-sidebarbg="skin6">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Demand Analysis</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="C:\Users\User\Downloads\dashboard-hotel\dashboard-cindy\src\file\dashboard2.html" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Supply Analysis</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="C:\Users\User\Downloads\dashboard-hotel\dashboard-cindy\src\file\dashboard3.html" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Occupancy Forecasting</span></a></li>
+
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+
+                    <div class="col-7 align-self-center">
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Good Morning </h3>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 p-0">
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- <div class="col-5 align-self-center">
+                        <div class="customize-input float-right">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                                <option selected>Aug 19</option>
+                                <option value="1">July 19</option>
+                                <option value="2">Jun 19</option>
+                            </select>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+
+                <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
+                    <li class="nav-item">
+                        <a href="#kementrian-b2" data-toggle="tab" aria-expanded="false" class="nav-link active" id="user1">
+                            <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+                            <span class="d-none d-lg-block">Kementerian Pariwisata</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings-b2" data-toggle="tab" aria-expanded="false" class="nav-link" id="user5">
+                            <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+                            <span class="d-none d-lg-block">Dinas Pariwisata</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#profile-b2" data-toggle="tab" aria-expanded="true" class="nav-link " id="user2">
+                            <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+                            <span class="d-none d-lg-block">Accomodation Provider</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="home-b2">
+
+                    </div>
+                    <div class="tab-pane " id="profile-b2">
+
+                    </div>
+                    <div class="tab-pane" id="settings-b2">
+
+                    </div>
+                    <div class="tab-pane" id="kementrian-b2">
+
+                    </div>
+                </div>
+
+                <!-- *************************************************************** -->
+                <!-- Start First Cards -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-md-2" id="select1">
+                        <div class="customize-input">
+                            <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                <option selected>All Hotel</option>
+                                <option value="1">AB</option>
+                                <option value="2">AK</option>
+                                <option value="3">BE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2" id="select2">
+                        <div class="customize-input">
+                            <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                <option selected>All Chain</option>
+                                <option value="1">AB</option>
+                                <option value="2">AK</option>
+                                <option value="3">BE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2" id="select3">
+                        <div class="customize-input">
+                            <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                <option selected>All City</option>
+                                <option value="1">AB</option>
+                                <option value="2">AK</option>
+                                <option value="3">BE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2" id="select4">
+                        <div class="customize-input">
+                            <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                                <option selected>All Province</option>
+                                <option value="1">AB</option>
+                                <option value="2">AK</option>
+                                <option value="3">BE</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <br>
+                <div class="card-group">
+
+                    <div class="card border-right" id="card1">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium">78%</h2>
+                                        <span class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">+1.33%</span>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Occupancy Rate
+                                    </h6>
+                                </div>
+                                <div class="ml-auto mt-md-3 mt-lg-0">
+                                    <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right" id="card2">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium">290.000</h2>
+                                        <span class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">+11.54%</span>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Tourist visit
+                                    </h6>
+                                </div>
+                                <div class="ml-auto mt-md-3 mt-lg-0">
+                                    <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right" id="card3">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium">435.000</h2>
+                                        <span class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">+11.5%</span>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Air passengers
+                                    </h6>
+                                </div>
+                                <div class="ml-auto mt-md-3 mt-lg-0">
+                                    <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- *************************************************************** -->
+                <!-- End First Cards -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Sales Charts Section -->
+                <!-- *************************************************************** -->
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12" id="chart1">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Traffic</h4>
+                                <div>
+                                    <canvas id="occupancy" height="200"> </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="chart2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Search date</h4>
+
+                                <div>
+                                    <canvas id="revenue" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12" id="chart3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Convertion rate</h4>
+                                <div>
+                                    <canvas id="length" height="200"> </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="chart4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Rental demand</h4>
+                                <div>
+                                    <canvas id="booking" height="200"> </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12" id="chart5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Tourist visit</h4>
+                                <div>
+                                    <canvas id="checkin" height="200"> </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="chart6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Air passengers</h4>
+                                <div>
+                                    <canvas id="room" height="200"> </canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- *************************************************************** -->
+                <!-- End Top Leader Table -->
+                <!-- *************************************************************** -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center text-muted">
+                All Rights Reserved by Hotel. Designed and Developed by Cindy</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- apps -->
+    <!-- apps -->
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <script src="../dist/js/feather.min.js"></script>
+    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="../assets/extra-libs/c3/d3.min.js"></script>
+    <script src="../assets/extra-libs/c3/c3.min.js"></script>
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-trendline"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+    <script>
+        //traffic
+        new Chart(document.getElementById("occupancy"), {
+            type: 'bar',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: "Growth (YOY)",
+                    type: "line",
+                    borderColor: "#8e5ea2",
+                    data: [30, 50, 75, 44, 48, 57, 65, 34, 48, 57, 65],
+                    fill: false
+                }, {
+                    label: "Trend",
+                    type: "line",
+                    borderColor: "#3e95cd",
+                    data: [50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70],
+                    fill: false,
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    }
+                }, {
+                    label: "Forecast",
+                    type: "line",
+                    borderColor: "orange",
+                    data: [51, 50, 51, 52, 55, 62, 61, 60, 62, 65, 71, 69],
+                    fill: false,
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    }
+                }, {
+                    label: "Traffic",
+                    type: "bar",
+                    backgroundColor: "rgba(0,0,0,0.2)",
+                    backgroundColorHover: "#3e95cd",
+                    data: [37, 57, 70, 54, 68, 47, 55, 44, 58, 67, 55],
+
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    // text: 'Population growth (millions): Europe & Africa'
+                },
+                legend: {
+                    display: true
+                }
+            }
+        });
+
+        //search
+        new Chart(document.getElementById("revenue"), {
+            type: 'bar',
+            data: {
+                labels: ["22/10/22", "23/10/22", "24/10/22", "25/10/22", "26/10/22", "27/10/22", "28/10/22", "29/10/22", "30/10/22", "31/10/22", "01/11/22"],
+                datasets: [{
+                    label: "Search date count",
+                    borderColor: "#3e95cd",
+                    data: [50, 50, 70, 54, 58, 57, 65, 54, 58, 57, 65, ],
+                    fill: false,
+                    trendlineLinear: {
+                        borderColor: "#3e95cd",
+                        lineStyle: "dotted|solid",
+                        width: 3,
+                    }
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    // text: 'Population growth (millions): Europe & Africa'
+                },
+                legend: {
+                    display: true
+                }
+            }
+        });
+
+        // visit
+        new Chart(document.getElementById("checkin"), {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    data: [86 * 1000, 114 * 1000, 106 * 1000, 106 * 1000, 107 * 1000, 111 * 1000, 133 * 1000, 221 * 1000, 283 * 1000, 278 * 1000, 290 * 1000],
+                    label: "Growth YOY",
+                    borderColor: "#8e5ea2",
+                    fill: false
+                }, {
+                    data: [90 * 1000, 120 * 1000, 150 * 1000, 180 * 1000, 210 * 1000, 240 * 1000, 200 * 1000, 200 * 1000, 230 * 1000, 260 * 1000, 290 * 1000],
+                    type: 'bar',
+                    label: "Tourist Visit",
+                    borderColor: "#3e95cd",
+                    fill: false,
+                    trendlineLinear: {
+                        borderColor: "#3e95cd",
+                        lineStyle: "dotted|solid",
+                        width: 3,
+                    }
+                }, {
+                    data: [100 * 1000, 110 * 1000, 120 * 1000, 160 * 1000, 210 * 1000, 180 * 1000, 210 * 1000, 200 * 1000, 230 * 1000, 260 * 1000, 290 * 1000, 330 * 1000],
+                    label: "Forecast",
+                    borderColor: "orange",
+                    fill: false,
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    }
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    // text: 'World population per region (in millions)'
+                },
+            }
+        });
+
+        //Convention rate
+        new Chart(document.getElementById("length"), {
+            type: 'bar',
+            data: {
+                labels: ["Q1", "Q2", "Q3", "Q4", ],
+                datasets: [{
+                        label: "Growth (YOY)",
+                        type: "line",
+                        borderColor: "#8e5ea2",
+                        data: [51, 50, 72],
+                        fill: false
+                    }, {
+                        label: "Trend",
+                        type: "line",
+                        borderColor: "#3e95cd",
+                        data: [45, 55, 65],
+                        fill: false,
+                        elements: {
+                            point: {
+                                radius: 0
+                            }
+                        }
+                    }, {
+                        label: "Forecast",
+                        type: "line",
+                        borderColor: "orange",
+                        data: [42, 52, 67, 73],
+                        fill: false,
+                        elements: {
+                            point: {
+                                radius: 0
+                            }
+                        }
+                    }, {
+                        label: "Conversion",
+                        backgroundColor: "#5f76e8",
+                        data: [51, 50, 72, ]
+                    }, {
+                        label: "Non - Conversion",
+                        backgroundColor: "#ff4f70",
+                        data: [57, 57, 70, ]
+                    }
+
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    // text: 'Population growth (millions)'
+                }
+            }
+        });
+
+        //rental demand
+        new Chart(document.getElementById("booking"), {
+            type: 'bar',
+            data: {
+                labels: ["Q1", "Q2", "Q3", "Q4", ],
+                datasets: [{
+                        label: "Growth (YOY)",
+                        type: "line",
+                        borderColor: "#8e5ea2",
+                        data: [51, 50, 72],
+                        fill: false
+                    }, {
+                        label: "Trend",
+                        type: "line",
+                        borderColor: "#3e95cd",
+                        data: [47, 57, 70],
+                        fill: false,
+                        elements: {
+                            point: {
+                                radius: 0
+                            }
+                        }
+                    }, {
+                        label: "Forecast",
+                        type: "line",
+                        borderColor: "orange",
+                        data: [42, 54, 72, 80],
+                        fill: false,
+                        elements: {
+                            point: {
+                                radius: 0
+                            }
+                        }
+                    }, {
+                        label: "Rental",
+                        backgroundColor: "rgba(0,0,0,0.2)",
+                        data: [51, 50, 72, ]
+                    }
+
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    // text: 'Population growth (millions)'
+                }
+            }
+        });
+
+        //air passengers
+        new Chart(document.getElementById("room"), {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    data: [126 * 1500, 154 * 1500, 166 * 1500, 156 * 1500, 157 * 1500, 121 * 1500, 133 * 1500, 221 * 1500, 283 * 1500, 278 * 1500, 290 * 1500],
+                    label: "Growth YOY",
+                    borderColor: "#8e5ea2",
+                    fill: false
+                }, {
+                    data: [120 * 1500, 160 * 1500, 210 * 1500, 180 * 1500, 210 * 1500, 240 * 1500, 200 * 1500, 200 * 1500, 230 * 1500, 260 * 1500, 290 * 1500],
+                    type: 'bar',
+                    label: "Tourist Visit",
+                    borderColor: "#3e95cd",
+                    fill: false,
+                    trendlineLinear: {
+                        borderColor: "#3e95cd",
+                        lineStyle: "dotted|solid",
+                        width: 3,
+                    }
+                }, {
+                    data: [110 * 1500, 180 * 1500, 220 * 1500, 160 * 1500, 210 * 1500, 180 * 1500, 210 * 1500, 200 * 1500, 230 * 1500, 260 * 1500, 290 * 1500, 330 * 1500],
+                    label: "Forecast",
+                    borderColor: "orange",
+                    fill: false,
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    }
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    // text: 'World population per region (in millions)'
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // Kementrian
+        $("#user1").click(function(e) {
+            document.getElementById("select1").style.display = "block";
+            document.getElementById("select2").style.display = "block";
+            document.getElementById("select3").style.display = "block";
+            document.getElementById("select4").style.display = "block";
+
+
+            document.getElementById("card1").style.display = "block";
+            document.getElementById("card2").style.display = "block";
+            document.getElementById("card3").style.display = "block";
+            document.getElementById("chart1").style.display = "block";
+            document.getElementById("chart2").style.display = "block";
+            document.getElementById("chart3").style.display = "block";
+            document.getElementById("chart4").style.display = "block";
+            document.getElementById("chart5").style.display = "block";
+            document.getElementById("chart6").style.display = "block";
+
+        });
+
+        //Accomodation Provider
+        $("#user2").click(function(e) {
+            document.getElementById("select1").style.display = "block";
+            document.getElementById("select2").style.display = "block";
+            document.getElementById("select3").style.display = "none";
+            document.getElementById("select4").style.display = "none";
+            document.getElementById("card1").style.display = "block";
+            document.getElementById("card2").style.display = "block";
+            document.getElementById("card3").style.display = "block";
+            document.getElementById("chart1").style.display = "block";
+            document.getElementById("chart2").style.display = "block";
+            document.getElementById("chart3").style.display = "block";
+            document.getElementById("chart4").style.display = "block";
+            document.getElementById("chart5").style.display = "block";
+            document.getElementById("chart6").style.display = "block";
+
+        });
+    </script>
+
+</body>
+
+</html>
